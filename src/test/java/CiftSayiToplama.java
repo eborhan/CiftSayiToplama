@@ -16,6 +16,6 @@ public class CiftSayiToplama {
         } while (n % 2 == 0);
             System.out.println("Hatalı değer. Program sonlandırılıyor...");
 
-        System.out.println("Toplam: " + sum);
+        System.out.println("Girilen çift sayıların toplamı: " + sum);
     }
 }
