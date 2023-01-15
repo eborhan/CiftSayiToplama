@@ -1,21 +1,19 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class CiftSayiToplama {
+
     public static void main(String[] args) {
 
         int n, sum = 0;
 
-        Scanner input = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Bir sayı giriniz: ");
+        n = scan.nextInt();
 
-        do {
-            System.out.print("Bir sayı giriniz: ");
-            n = input.nextInt();
-            if (n % 2 == 0) { // Ödev içinde 4'ün katı da belirtiliyor fakat mode 2 her zaman mode 4'ü kapsar.
-                sum += n;
-            }
-        } while (n % 2 == 0);
-        System.out.println("Hatalı değer. Program sonlandırılıyor...");
-
-        System.out.println("Girilen çift sayıların toplamı: " + sum);
+        for (int i= 0; i<=n; i++){
+            if (i % 2 ==0)
+                sum += i;
+        }
+        System.out.println("Toplam: "+sum);
     }
 }
